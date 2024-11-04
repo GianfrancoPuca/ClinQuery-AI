@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=prompt_suggestion" />
+</head>
+
+<body>
+    <div class="chatbox">
+        <div class="header">
+            <h4>Chatbot</h4>
+        </div>
+        <div class="chatlogs" id="chatlogs">
+            
+            <div class="chat robot">
+                <div class="robot-photo"></div>
+                <p class="chat-message">Ciao! Come posso aiutarti?</p>
+            </div>
+    
+
+        </div>
+        <div class="chat-form">
+            <input type="text" id="chat-input" placeholder="Scrivi qui"></textarea>
+            <button id="send">
+                <span class="material-symbols-outlined">
+                    prompt_suggestion
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
